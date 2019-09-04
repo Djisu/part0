@@ -1,0 +1,14 @@
+#Notes--Single Page App
+#Browser sends Post request to https://fullstack-exampleapp.herokuapp.com/new_note_app
+browser->server:
+#Server returns status 201 to browser indicating success. No further reloads required.
+server-->browser:
+#Browser activities after server returning status 201 status.
+# Form is created by select all elements with id 'notes_form'
+#Browser implements event handler: e.preventDefault() which prevents the form from reloading after the post to server
+# New json file note is created: form content and date stamp
+#Note json sent to notes array and form elements re-initialsed
+note->notes:
+#sendToServer(note): note is sent to server
+note->server:
+

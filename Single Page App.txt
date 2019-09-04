@@ -1,0 +1,7 @@
+title Single Page App
+#The browser sends POST request to the address new_note_spa contains the new note as JSON-data 
+# in the form of a content and timestamp.
+browser->server:
+#The server responds with statuscode 201 created.Browser does not ask for a page reload
+server-->browser:
+

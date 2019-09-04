@@ -1,0 +1,18 @@
+Title Button Click Event
+# Browser (HTTP Post request) -> server(new_note)
+Browswer->Server:
+#server returns <- (HTTP status code 302) to Browser
+server-->browser:
+#browser reloads the notes page which causes three more HTTP requests to the server.
+#HTTP GET request for main.css
+browser->server:
+#server returns main.css
+server-->browser:
+#HTTP request for main.js
+browser->server:
+#server returns main.js to browser
+server-->browser:
+#browser makes HTTP GET request for data.json to server
+browser->server:
+#server returns data.json to the browser
+server-->browser:
